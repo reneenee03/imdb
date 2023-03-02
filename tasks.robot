@@ -8,8 +8,8 @@ Library             RPA.RobotLogListener
 
 
 *** Variables ***
-${USER_NAME}            RobocorpInc
-${NUMBER_OF_TWEETS}     3
+${USER_NAME}            The Godfather
+${NUMBER_OF_TWEETS}     1
 ${TWEET_DIRECTORY}      ${CURDIR}${/}output${/}tweets/${USER_NAME}
 ${TWEETS_LOCATOR}       xpath://article[descendant::span[contains(text(), "\@${USER_NAME}")]]
 
@@ -25,7 +25,7 @@ Store the latest tweets by given user name
 
 *** Keywords ***
 Open Twitter homepage
-    Open Available Browser    https://mobile.twitter.com/${USER_NAME}
+    Open Available Browser    https://www.imdb.com/chart/top/
     Wait Until Element Is Visible    css:main
 
 Hide element

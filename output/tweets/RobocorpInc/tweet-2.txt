@@ -1,0 +1,5 @@
+Wanting to learn how to connect Robocorp with OpenAI #ChatGPT?
+
+In this second episode of Coding with Success, our Technical Account Manager, will walk you through a few examples of how to build three bots that use OpenAI's API.
+
+Check it out below!
