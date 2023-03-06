@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.5 on darwin)" generated="20230305 15:52:18.638" rpa="true" schemaversion="3">
-<suite id="s1" name="Tasks" source="/Users/reneejiang/imdb/tasks.robot">
-<test id="s1-t1" name="Store Web Page Content" line="17">
+<robot generator="Robot 5.0.1 (Python 3.7.5 on darwin)" generated="20230305 16:46:48.412" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="/Users/juanlucasumali/Desktop/berkeley/codebase/asticssp23/imdb/tasks.robot">
+<test id="s1-t1" name="Store Web Page Content" line="16">
 <kw name="Open Available Browser" library="RPA.Browser.Selenium">
-<arg>https://screenrant.com/best-tv-shows-2022/</arg>
+<arg>https://screenrant.com/best-movies-2022/</arg>
 <doc>Attempts to open a browser on the user's device from a set of
 supported browsers. Automatically downloads a corresponding webdriver
 if none is already installed.</doc>
-<msg timestamp="20230305 15:52:19.281" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230305 15:52:19.292" level="INFO">Created download root directory: /Users/reneejiang/.robocorp/webdrivers</msg>
-<msg timestamp="20230305 15:52:19.293" level="INFO">Created symlink directory: /Users/reneejiang/.robocorp/webdrivers</msg>
-<msg timestamp="20230305 15:52:19.294" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230305 15:52:21.471" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
-<msg timestamp="20230305 15:52:21.473" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+<msg timestamp="20230305 16:46:49.039" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 16:46:49.056" level="INFO">Created download root directory: /Users/juanlucasumali/.robocorp/webdrivers</msg>
+<msg timestamp="20230305 16:46:49.057" level="INFO">Created symlink directory: /Users/juanlucasumali/.robocorp/webdrivers</msg>
+<msg timestamp="20230305 16:46:49.058" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230305 16:46:55.225" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230305 16:46:55.226" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
-<msg timestamp="20230305 15:52:21.473" level="INFO">Opening url 'https://screenrant.com/best-tv-shows-2022/'</msg>
-<status status="PASS" starttime="20230305 15:52:19.279" endtime="20230305 15:52:27.318"/>
+<msg timestamp="20230305 16:46:55.226" level="INFO">Opening url 'https://screenrant.com/best-movies-2022/'</msg>
+<status status="PASS" starttime="20230305 16:46:49.039" endtime="20230305 16:47:37.276"/>
 </kw>
 <kw name="Hide distracting UI elements">
 <kw name="Create List" library="BuiltIn">
@@ -28,8 +28,8 @@ if none is already installed.</doc>
 <arg>div[data-testid="inlinePrompt"]</arg>
 <arg>div[data-testid="sheetDialog"]</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20230305 15:52:27.322" level="INFO">@{locators} = [ header | #layers &gt; div | nav | div[data-testid="primaryColumn"] &gt; div &gt; div | div[data-testid="sidebarColumn"] | div[data-testid="inlinePrompt"] | div[data-testid="sheetDialog"] ]</msg>
-<status status="PASS" starttime="20230305 15:52:27.320" endtime="20230305 15:52:27.322"/>
+<msg timestamp="20230305 16:47:37.321" level="INFO">@{locators} = [ header | #layers &gt; div | nav | div[data-testid="primaryColumn"] &gt; div &gt; div | div[data-testid="sidebarColumn"] | div[data-testid="inlinePrompt"] | div[data-testid="sheetDialog"] ]</msg>
+<status status="PASS" starttime="20230305 16:47:37.291" endtime="20230305 16:47:37.321"/>
 </kw>
 <for flavor="IN">
 <var>${locator}</var>
@@ -45,15 +45,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:27.333" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:27.326" endtime="20230305 15:52:27.334"/>
+<msg timestamp="20230305 16:47:37.347" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.343" endtime="20230305 16:47:37.379"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:27.335" endtime="20230305 15:52:27.336"/>
+<status status="PASS" starttime="20230305 16:47:37.380" endtime="20230305 16:47:37.380"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:27.325" endtime="20230305 15:52:27.336"/>
+<status status="PASS" starttime="20230305 16:47:37.342" endtime="20230305 16:47:37.380"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -62,18 +62,22 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:27.337" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:27.338" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.384" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.385" level="INFO">Executing JavaScript:
 document.querySelector('header').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:28.706" level="INFO">Capture Page Screenshot will be run on failure.</msg>
-<status status="PASS" starttime="20230305 15:52:27.337" endtime="20230305 15:52:28.706"/>
+<msg timestamp="20230305 16:47:37.410" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+</msg>
+<msg timestamp="20230305 16:47:37.413" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.383" endtime="20230305 16:47:37.412"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:27.336" endtime="20230305 15:52:28.706"/>
+<status status="PASS" starttime="20230305 16:47:37.382" endtime="20230305 16:47:37.413"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:27.324" endtime="20230305 15:52:28.706"/>
+<status status="PASS" starttime="20230305 16:47:37.341" endtime="20230305 16:47:37.413"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:27.323" endtime="20230305 15:52:28.707"/>
+<status status="PASS" starttime="20230305 16:47:37.328" endtime="20230305 16:47:37.413"/>
 </iter>
 <iter>
 <var name="${locator}">#layers &gt; div</var>
@@ -86,15 +90,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:28.709" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:28.708" endtime="20230305 15:52:28.710"/>
+<msg timestamp="20230305 16:47:37.444" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.434" endtime="20230305 16:47:37.457"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:28.710" endtime="20230305 15:52:28.711"/>
+<status status="PASS" starttime="20230305 16:47:37.462" endtime="20230305 16:47:37.467"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:28.708" endtime="20230305 15:52:28.711"/>
+<status status="PASS" starttime="20230305 16:47:37.421" endtime="20230305 16:47:37.467"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -103,21 +107,22 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:28.712" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:28.712" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:28.713" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.476" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.476" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.476" level="INFO">Executing JavaScript:
 document.querySelector('#layers &gt; div').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:29.015" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'style')
+<msg timestamp="20230305 16:47:37.483" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=110.0.5481.177)
 </msg>
-<status status="FAIL" starttime="20230305 15:52:28.712" endtime="20230305 15:52:29.017"/>
+<status status="FAIL" starttime="20230305 16:47:37.472" endtime="20230305 16:47:37.483"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:28.711" endtime="20230305 15:52:29.017"/>
+<status status="PASS" starttime="20230305 16:47:37.467" endtime="20230305 16:47:37.485"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:28.707" endtime="20230305 15:52:29.018"/>
+<status status="PASS" starttime="20230305 16:47:37.418" endtime="20230305 16:47:37.485"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:28.707" endtime="20230305 15:52:29.018"/>
+<status status="PASS" starttime="20230305 16:47:37.417" endtime="20230305 16:47:37.487"/>
 </iter>
 <iter>
 <var name="${locator}">nav</var>
@@ -130,15 +135,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:29.021" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:29.020" endtime="20230305 15:52:29.022"/>
+<msg timestamp="20230305 16:47:37.507" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.507" endtime="20230305 16:47:37.513"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:29.022" endtime="20230305 15:52:29.023"/>
+<status status="PASS" starttime="20230305 16:47:37.513" endtime="20230305 16:47:37.515"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.020" endtime="20230305 15:52:29.023"/>
+<status status="PASS" starttime="20230305 16:47:37.506" endtime="20230305 16:47:37.515"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -147,19 +152,23 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:29.024" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.024" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.025" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.025" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.518" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.519" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.519" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.521" level="INFO">Executing JavaScript:
 document.querySelector('nav').style.display = 'none'
 Without any arguments.</msg>
-<status status="PASS" starttime="20230305 15:52:29.024" endtime="20230305 15:52:29.037"/>
+<msg timestamp="20230305 16:47:37.524" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+</msg>
+<status status="FAIL" starttime="20230305 16:47:37.518" endtime="20230305 16:47:37.525"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.023" endtime="20230305 15:52:29.038"/>
+<status status="PASS" starttime="20230305 16:47:37.515" endtime="20230305 16:47:37.525"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.019" endtime="20230305 15:52:29.038"/>
+<status status="PASS" starttime="20230305 16:47:37.490" endtime="20230305 16:47:37.525"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.018" endtime="20230305 15:52:29.038"/>
+<status status="PASS" starttime="20230305 16:47:37.488" endtime="20230305 16:47:37.525"/>
 </iter>
 <iter>
 <var name="${locator}">div[data-testid="primaryColumn"] &gt; div &gt; div</var>
@@ -172,15 +181,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:29.041" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:29.040" endtime="20230305 15:52:29.042"/>
+<msg timestamp="20230305 16:47:37.527" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.527" endtime="20230305 16:47:37.527"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:29.042" endtime="20230305 15:52:29.043"/>
+<status status="PASS" starttime="20230305 16:47:37.529" endtime="20230305 16:47:37.529"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.040" endtime="20230305 15:52:29.075"/>
+<status status="PASS" starttime="20230305 16:47:37.526" endtime="20230305 16:47:37.529"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -189,23 +198,24 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:29.078" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.078" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.078" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.078" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.079" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.530" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.530" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.530" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.530" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.530" level="INFO">Executing JavaScript:
 document.querySelector('div[data-testid="primaryColumn"] &gt; div &gt; div').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:29.335" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'style')
+<msg timestamp="20230305 16:47:37.542" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=110.0.5481.177)
 </msg>
-<status status="FAIL" starttime="20230305 15:52:29.077" endtime="20230305 15:52:29.335"/>
+<status status="FAIL" starttime="20230305 16:47:37.530" endtime="20230305 16:47:37.543"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.076" endtime="20230305 15:52:29.336"/>
+<status status="PASS" starttime="20230305 16:47:37.529" endtime="20230305 16:47:37.543"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.039" endtime="20230305 15:52:29.336"/>
+<status status="PASS" starttime="20230305 16:47:37.526" endtime="20230305 16:47:37.548"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.039" endtime="20230305 15:52:29.336"/>
+<status status="PASS" starttime="20230305 16:47:37.526" endtime="20230305 16:47:37.548"/>
 </iter>
 <iter>
 <var name="${locator}">div[data-testid="sidebarColumn"]</var>
@@ -218,15 +228,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:29.339" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:29.338" endtime="20230305 15:52:29.339"/>
+<msg timestamp="20230305 16:47:37.550" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.549" endtime="20230305 16:47:37.550"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:29.339" endtime="20230305 15:52:29.340"/>
+<status status="PASS" starttime="20230305 16:47:37.550" endtime="20230305 16:47:37.550"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.338" endtime="20230305 15:52:29.340"/>
+<status status="PASS" starttime="20230305 16:47:37.549" endtime="20230305 16:47:37.551"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -235,24 +245,25 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:29.341" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.341" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.341" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.341" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.341" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:29.342" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.551" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.551" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.551" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.551" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.551" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.552" level="INFO">Executing JavaScript:
 document.querySelector('div[data-testid="sidebarColumn"]').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:30.343" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'style')
+<msg timestamp="20230305 16:47:37.577" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=110.0.5481.177)
 </msg>
-<status status="FAIL" starttime="20230305 15:52:29.341" endtime="20230305 15:52:30.343"/>
+<status status="FAIL" starttime="20230305 16:47:37.551" endtime="20230305 16:47:37.577"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.340" endtime="20230305 15:52:30.344"/>
+<status status="PASS" starttime="20230305 16:47:37.551" endtime="20230305 16:47:37.577"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.337" endtime="20230305 15:52:30.344"/>
+<status status="PASS" starttime="20230305 16:47:37.548" endtime="20230305 16:47:37.577"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:29.336" endtime="20230305 15:52:30.345"/>
+<status status="PASS" starttime="20230305 16:47:37.548" endtime="20230305 16:47:37.577"/>
 </iter>
 <iter>
 <var name="${locator}">div[data-testid="inlinePrompt"]</var>
@@ -265,15 +276,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:30.348" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:30.347" endtime="20230305 15:52:30.349"/>
+<msg timestamp="20230305 16:47:37.580" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.579" endtime="20230305 16:47:37.580"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:30.349" endtime="20230305 15:52:30.350"/>
+<status status="PASS" starttime="20230305 16:47:37.580" endtime="20230305 16:47:37.580"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.347" endtime="20230305 15:52:30.350"/>
+<status status="PASS" starttime="20230305 16:47:37.579" endtime="20230305 16:47:37.580"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -282,25 +293,26 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.357" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.358" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.581" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.582" level="INFO">Executing JavaScript:
 document.querySelector('div[data-testid="inlinePrompt"]').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:30.440" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'style')
+<msg timestamp="20230305 16:47:37.584" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=110.0.5481.177)
 </msg>
-<status status="FAIL" starttime="20230305 15:52:30.351" endtime="20230305 15:52:30.440"/>
+<status status="FAIL" starttime="20230305 16:47:37.581" endtime="20230305 16:47:37.585"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.350" endtime="20230305 15:52:30.441"/>
+<status status="PASS" starttime="20230305 16:47:37.581" endtime="20230305 16:47:37.590"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.346" endtime="20230305 15:52:30.441"/>
+<status status="PASS" starttime="20230305 16:47:37.578" endtime="20230305 16:47:37.596"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.345" endtime="20230305 15:52:30.441"/>
+<status status="PASS" starttime="20230305 16:47:37.578" endtime="20230305 16:47:37.597"/>
 </iter>
 <iter>
 <var name="${locator}">div[data-testid="sheetDialog"]</var>
@@ -313,15 +325,15 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<msg timestamp="20230305 15:52:30.444" level="FAIL">No library 'RPA.Browser' found.</msg>
-<status status="FAIL" starttime="20230305 15:52:30.443" endtime="20230305 15:52:30.445"/>
+<msg timestamp="20230305 16:47:37.638" level="FAIL">No library 'RPA.Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:47:37.600" endtime="20230305 16:47:37.639"/>
 </kw>
 <kw name="Get Library Instance" library="BuiltIn">
 <arg>RPA.Browser.Selenium</arg>
 <doc>Returns the currently active instance of the specified library.</doc>
-<status status="PASS" starttime="20230305 15:52:30.445" endtime="20230305 15:52:30.446"/>
+<status status="PASS" starttime="20230305 16:47:37.640" endtime="20230305 16:47:37.641"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.443" endtime="20230305 15:52:30.446"/>
+<status status="PASS" starttime="20230305 16:47:37.599" endtime="20230305 16:47:37.641"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Execute Javascript</arg>
@@ -330,56 +342,62 @@ default behaviour of running keyword on failure.</doc>
 <kw name="Execute Javascript" library="RPA.Browser.Selenium">
 <arg>document.querySelector('${locator}').style.display = 'none'</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230305 15:52:30.447" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.447" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.447" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.448" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.448" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.448" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.448" level="INFO">No keyword will be run on failure.</msg>
-<msg timestamp="20230305 15:52:30.448" level="INFO">Executing JavaScript:
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.642" level="INFO">No keyword will be run on failure.</msg>
+<msg timestamp="20230305 16:47:37.643" level="INFO">Executing JavaScript:
 document.querySelector('div[data-testid="sheetDialog"]').style.display = 'none'
 Without any arguments.</msg>
-<msg timestamp="20230305 15:52:30.528" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'style')
+<msg timestamp="20230305 16:47:37.652" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=110.0.5481.177)
 </msg>
-<status status="FAIL" starttime="20230305 15:52:30.447" endtime="20230305 15:52:30.528"/>
+<status status="FAIL" starttime="20230305 16:47:37.642" endtime="20230305 16:47:37.653"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.447" endtime="20230305 15:52:30.529"/>
+<status status="PASS" starttime="20230305 16:47:37.641" endtime="20230305 16:47:37.653"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.442" endtime="20230305 15:52:30.529"/>
+<status status="PASS" starttime="20230305 16:47:37.598" endtime="20230305 16:47:37.653"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:30.442" endtime="20230305 15:52:30.529"/>
+<status status="PASS" starttime="20230305 16:47:37.597" endtime="20230305 16:47:37.653"/>
 </iter>
-<status status="PASS" starttime="20230305 15:52:27.323" endtime="20230305 15:52:30.529"/>
+<status status="PASS" starttime="20230305 16:47:37.327" endtime="20230305 16:47:37.653"/>
 </for>
-<status status="PASS" starttime="20230305 15:52:27.319" endtime="20230305 15:52:30.530"/>
+<status status="PASS" starttime="20230305 16:47:37.281" endtime="20230305 16:47:37.654"/>
 </kw>
 <kw name="Screenshot" library="RPA.Browser.Selenium">
-<arg>id:${MOVIE_NAME}</arg>
-<arg>${TWEET_DIRECTORY}${/}screenshot.png</arg>
+<arg>id:${TITLE}</arg>
+<arg>${TITLE_DIRECTORY}${/}screenshot.png</arg>
 <doc>Capture page and/or element screenshot.</doc>
-<msg timestamp="20230305 15:52:31.083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;img alt="screenshot" class="robot-seleniumlibrary-screenshot" src="data:image/png;base64,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" width="400px"&gt;</msg>
-<msg timestamp="20230305 15:52:31.208" level="INFO">Screenshot saved to file: /Users/reneejiang/imdb/output/tweets/abbott-elementary-2/screenshot.png</msg>
-<status status="PASS" starttime="20230305 15:52:30.531" endtime="20230305 15:52:31.209"/>
+<msg timestamp="20230305 16:47:37.663" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+</msg>
+<status status="FAIL" starttime="20230305 16:47:37.654" endtime="20230305 16:47:37.665"/>
 </kw>
 <kw name="Close Browser" library="RPA.Browser.Selenium" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230305 15:52:31.210" endtime="20230305 15:52:31.560"/>
+<status status="PASS" starttime="20230305 16:47:37.666" endtime="20230305 16:47:37.777"/>
 </kw>
-<status status="PASS" starttime="20230305 15:52:19.278" endtime="20230305 15:52:31.561"/>
+<status status="FAIL" starttime="20230305 16:46:49.038" endtime="20230305 16:47:37.777">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+</status>
 </test>
 <doc>Opens the Screenrant web page and stores some content.</doc>
-<status status="PASS" starttime="20230305 15:52:18.641" endtime="20230305 15:52:31.563"/>
+<status status="FAIL" starttime="20230305 16:46:48.414" endtime="20230305 16:47:37.779"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tasks</stat>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
 </suite>
 </statistics>
 <errors>

@@ -8,15 +8,15 @@ Library             RPA.RobotLogListener
 
 
 *** Variables ***
-${MOVIE_NAME}           abbott-elementary-2
+${TITLE}           the-bear
 ${NUMBER_OF_MOVIES}     1
-${TWEET_DIRECTORY}      ${CURDIR}${/}output${/}tweets/${MOVIE_NAME}
+${TITLE_DIRECTORY}      ${CURDIR}${/}output${/}${TITLE}
 
 *** Tasks ***
 Store Web Page Content
     Open Available Browser    https://screenrant.com/best-tv-shows-2022/
     Hide distracting UI elements
-    Screenshot    id:${MOVIE_NAME}    ${TWEET_DIRECTORY}${/}screenshot.png
+    Screenshot    id:${TITLE}    ${TITLE_DIRECTORY}${/}screenshot.png
     [Teardown]    Close Browser
 
 *** Keywords ***

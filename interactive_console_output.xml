@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.5 on darwin)" generated="20230305 16:20:08.446" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/juanlucasumali/.vscode/extensions/robocorp.robotframework-lsp-1.9.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Available Browser">
+<arg>https://www.imdb.com/chart/top/</arg>
+<msg timestamp="20230305 16:20:09.065" level="FAIL">No keyword with name 'Open Available Browser' found.</msg>
+<status status="FAIL" starttime="20230305 16:20:09.065" endtime="20230305 16:20:09.065"/>
+</kw>
+<kw name="Hide distracting UI elements">
+<status status="NOT RUN" starttime="20230305 16:20:09.067" endtime="20230305 16:20:09.067"/>
+</kw>
+<kw name="Screenshot">
+<arg>//img[@alt="${TITLE}"]</arg>
+<arg>${TITLE_DIRECTORY}${/}screenshot.png</arg>
+<status status="NOT RUN" starttime="20230305 16:20:09.068" endtime="20230305 16:20:09.068"/>
+</kw>
+<status status="PASS" starttime="20230305 16:20:08.475" endtime="20230305 16:29:33.174"/>
+</kw>
+<status status="PASS" starttime="20230305 16:20:08.474" endtime="20230305 16:29:33.176"/>
+</test>
+<status status="PASS" starttime="20230305 16:20:08.447" endtime="20230305 16:29:33.179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
